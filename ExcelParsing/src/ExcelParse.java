@@ -6,7 +6,11 @@ import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFROW;
+import org.apache.poi.xssf.usermodel.XSSFSHEET;
+
 
 public class ExcelParse {
 
@@ -156,7 +160,7 @@ public class ExcelParse {
 
 		    	FileOutputStream outFile;    	   
 
-				outFile = new FileOutputStream("D:\\Users\\...\\Parsing\\parsedatas.xlsx");
+				outFile = new FileOutputStream("D:\\Users\\...\\Parsing\\parseDatas.xlsx");
 
 				newworkbook.write(outFile);
 
