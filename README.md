@@ -30,4 +30,7 @@ File looks just like this.
 So the problem was I should have made files .csv . I need to use POI to open Excel But, I should have to make file with text file. 
 
 ### What is CSV?
-CSV (Comma separarted version), file that has been separated by comma.
+CSV (Comma separarted version), file that has been separated by comma. It is not same as xls,xlsx. It is not Excel file. There are meta info in everyfiles. And CSV is text file. 
+
+### Import CSV to Database(MariaDB)
+I used DBeaver tool to handle MariaDB. And There were some problem to think about. First I should change "o", "x", " " text to "Y", or "N".
