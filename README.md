@@ -1,11 +1,11 @@
 # JAVA_Excel_Parsing
 POI Library by Apache
 
-## Before start...
+## Before get starting...
 I had a Excel file that has to be upload to my database. Each cells were mixed by  imformations, blanks, and formulas. And I had to parse ExcelFile in forms like "1","apple","red","","Round"...etc. So first, I decided to use Java and I found POI Library.
 
 ## What Library?
-There are some Library to use when we handle Excel. Most of people used POI Library. Because there are version of Excel we could use. Most of people use higher version Excel, So we have to think of Excel version. I have 2007 version, so I used POI Library. 
+There were some Libraries to use when we handle Excel files with Java. When I surf in Internet most people used POI Library. Because there are version of Excel we could use. Most of people use higher version Excel, so I have 2007 version and I used POI Library. 
 
 ### POI Library
 - Download here : https://poi.apache.org/
@@ -34,3 +34,5 @@ CSV (Comma separarted version), file that has been separated by comma. It is not
 
 ### Import CSV to Database(MariaDB)
 I used DBeaver tool to handle MariaDB. And There were some problem to think about. First I should change "o", "x", " " text to "Y", or "N".
+DB Import was successful, but we have to think about some issue.
+- First, 
