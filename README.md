@@ -25,12 +25,14 @@ But there were serious Problem in imporing to DataBase.
 
 
 ## CSV
-I had problem with importing csv file to Database. There were many ways to import to DataBase, but I select importing csv File. So I convert xlsx file that I made to csv with memopad.\
+I had serious problem with importing csv file to Database. There were many ways to import Data to DataBase, but I need to import csv File because I need a function that has to be imported by button in Web. So I parse xlsx file and made new xlsw file in it's own form.  
 File looks just like this.
-So the problem was I should have made files .csv . I need to use POI to open Excel But, I should have to make file with text file. 
+[Image]
+I was using Dbeaver tools, and I found importing function. I need to use Query but, I am not used to Database so, I use the function. Then I found that I had to change xlsx files to csv file. So I just changed extension. But then, problem occured. They shows how it works but, it seems something wrong.
+So I tried to change Column delimiter, Quote char, and Quote char. But that doesn't work at all. I tried to think what makes problem. Then I thought what is CSV?
 
 ### What is CSV?
-CSV (Comma separarted version), file that has been separated by comma. It is not same as xls,xlsx. It is not Excel file. There are meta info in everyfiles. And CSV is text file. 
+CSV (Comma separarted version) is file that has been separated by comma. It is not same as xls,xlsx. First, I thought it's same as xls or xlsx. But it wasn't. It is not Excel file. There are meta data in files. In program I made xlsx file. So it's xlsx file even if I changed extension. And what is CSV? It is text file! I was wrong! So I changed some code in program. And I made csv file in program. Then it works! 
 
 ### Import CSV to Database(MariaDB)
 I used DBeaver tool to handle MariaDB. And There were some problem to think about. First I should change "o", "x", " " text to "Y", or "N".
