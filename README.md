@@ -36,5 +36,9 @@ CSV (Comma separarted version) is file that has been separated by comma. It is n
 
 ### Import CSV to Database(MariaDB)
 I used DBeaver tool to handle MariaDB. And There were some problem to think about. First I should change "o", "x", " " text to "Y", or "N".
+```
+if (columnindex ==11 || )
+```
 DB Import was successful, but we have to think about some issue.
 - First, 
+
