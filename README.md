@@ -72,3 +72,4 @@ So I found index that has to be converted.
 - Second, if Formula cell's value has problem that makes "#value" 
 
 DB Import was successful, but we have to think about some issue.
+
