@@ -85,14 +85,14 @@ What I want was result but, it brings me formula. So I changed value to get Nume
     ```
     switch (cell.getCellType()){  
     
-    		                    case XSSFCell.CELL_TYPE_FORMULA:                        
+         case XSSFCell.CELL_TYPE_FORMULA:                        
     
-    		                    	value=cell.getFormulaCellValue()+"";
-    		                    	// we should use cell.getNumericCellValue!
+    	 value=cell.getFormulaCellValue()+"";
+    	// we should use cell.getNumericCellValue!
     
-    		                        break;
+    	break;
     		                        
-    		                    }
+    }
    ``` 
 - Third, if Formula cell's value has problem that makes "#value", 
          problem occurs. So I decided to choose NumericValue rather than to 
