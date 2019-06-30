@@ -11,9 +11,18 @@ Each cells were mixed by  imformations, blanks,
 ## What Library?
 There were some Libraries to use when 
 we handle Excel files with Java. When I 
-surf in Internet most people used POI Library. Because there are version of Excel we could use. Most of people use higher version Excel, so I have 2007 version and I used POI Library. 
+surf in Internet most people used POI Library. 
+Because there are versions of Excel we could use. 
+Most of people use higher version Excel, so I have 2007 version and I used POI Library. 
 
 ### POI Library
+- Max Data
+
+ Excel 2003 | Excel 2007 
+ ----- | -----
+ 265 Column | 16,384 Column
+ 65,536 Line | 1,048,576 Line
+
 - Download here : https://poi.apache.org/
 
 ![POI](https://user-images.githubusercontent.com/32008149/60108008-dffe6c80-97a2-11e9-963f-7d87a7cf7d5a.PNG)
@@ -25,6 +34,7 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
 - In Maven, you could put dependency to POM.xml (Beacareful for the Version)\
 You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
 ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
+
 
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.
@@ -60,7 +70,8 @@ Then it works!
 I used DBeaver tool to handle MariaDB. And There were some 
 problem to think about. 
 - First, I should change "o", "x", " " text to "Y", or "N".  
-So I found index that has to be converted.
+So I found index that has to be converted.(Code can be weired about "A,B,C .." values can be "Y", But Data that I 
+received doesn't need to think about that issues.)
   ~~~
   if(columnindex==11 || columnindex==15){                   		 
          if(value=="x" || value.isEmpty()){
@@ -69,7 +80,23 @@ So I found index that has to be converted.
               buff.append("\"Y\",");                 			
          } 
   ~~~
-- Second, if Formula cell's value has problem that makes "#value" 
-
+- Second, there are some formulas, in data. When I parse data from file, it brings formula such as "x1 + y1".
+What I want was result but, it brings me formula. So I changed value to get Numericvalue. 
+    ```
+    switch (cell.getCellType()){  
+    
+    		                    case XSSFCell.CELL_TYPE_FORMULA:                        
+    
+    		                    	value=cell.getFormulaCellValue()+"";
+    		                    	// we should use cell.getNumericCellValue!
+    
+    		                        break;
+    		                        
+    		                    }
+   ``` 
+- Third, if Formula cell's value has problem that makes "#value", 
+         problem occurs. So I decided to choose NumericValue rather than to 
+         show both String Value and NumericValue by "if else" syntax. Because what is formula? It has to make
+         NumericValue. I can make them to show "-1" if there are problem in Formula, but 
 DB Import was successful, but we have to think about some issue.
 
