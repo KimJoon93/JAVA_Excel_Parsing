@@ -13,7 +13,7 @@ There were some Libraries to use when
 we handle Excel files with Java. When I 
 surf in Internet most people used POI Library. 
 Because there are versions of Excel we could use. 
-Most of people use higher version Excel, so I have 2007 version and I used POI Library. 
+Most of people use higher version Excel, and I have 2007 version so I used POI Library. 
 
 ### POI Library
 - Max Data
@@ -98,5 +98,19 @@ What I want was result but, it brings me formula. So I changed value to get Nume
          problem occurs. So I decided to choose NumericValue rather than to 
          show both String Value and NumericValue by "if else" syntax. Because what is formula? It has to make
          NumericValue. I can make them to show "-1" if there are problem in Formula, but 
+         
+- Lastly, date has to be converted. First I didn't check the date but when I tried to import to Database, I saw weired number.Then
+I realized I should convert to data format. 
+    ```
+    case XSSFCell.CELL_TYPE_NUMERIC:
+                        	if(columnindex==14 || columnindex==27){
+                        		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+                        		value = format.format(cell.getDateCellValue());
+                        		break;
+                        	}
+                            value=cell.getNumericCellValue()+"";
+                            break;
+
+    ```         
 DB Import was successful, but we have to think about some issue.
 
