@@ -53,7 +53,9 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
 - In Maven, you could put dependency to POM.xml (Beacareful for the Version)\
 You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
     ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
-
+    if you want to handle xslsx file, you have to put ooxml dependency to pom.xml
+    ![스크린샷 2019-07-02 오후 11 34 02](https://user-images.githubusercontent.com/32008149/60521268-ed2ad680-9d21-11e9-96e0-d499a487d272.png)
+    
 - Make new Maven Project\
     ![스크린샷 2019-07-02 오후 10 09 22](https://user-images.githubusercontent.com/32008149/60515203-180f2d80-9d16-11e9-881e-960d3d0c3fe4.png)
 
