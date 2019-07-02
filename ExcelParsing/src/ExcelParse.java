@@ -4,33 +4,33 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.BufferedWriter;
 
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 public class ExcelParse {
-
+		
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
 		
 		try {
 			
-		    FileInputStream file = new FileInputStream("//Users//joon//Desktop//JAVA_Excel_Parsing//sample.xlsx");
-		    XSSFWorkbook workbook = new XSSFWorkbook(file);
-
+		    
+		    XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream("/Users/joon/Desktop/JAVA_Excel_Parsing/sample.xlsx")); 
 		    int rowindex=0;
 
 		    int columnindex=0;
 
 		    int sheetindex=0;
 		    
-		    
 		    StringBuffer buff = new StringBuffer();
 
-		    XSSFSheet sheet=workbook.getSheetAt(sheetindex);
+		    XSSFSheet sheet = workbook.getSheetAt(sheetindex);
 		    
-		    File csvfile = new File("//Users//joon//Desktop//JAVA_Excel_Parsing//parseSample.csv");
+		    File csvfile = new File("/Users/joon/Desktop/JAVA_Excel_Parsing/parseSample.csv");
 		    BufferedWriter fw = new BufferedWriter(new FileWriter(csvfile,true));
 
 		    int rows=sheet.getPhysicalNumberOfRows();

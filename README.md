@@ -16,12 +16,30 @@ Because there are versions of Excel we could use.
 Most of people use higher version Excel, and I have 2007 version so I used POI Library. 
 
 ### POI Library
+- Before we use library
+    Check this out if you have problem with using xssfWorkbook.\
+    [Can Apache be compiled / used Java 10 or newer?](https://poi.apache.org/help/faq.html#faq-java10)\
+    Because I had problem using xssfworkbook in new Mac book. I installed java 12 version in mac. 
+    So my code worked in windows notebook, but it had problem in compiling in Mac.
+    If you think there are no problems in your code and adding jar files, and have compile problem like this
+    ![스크린샷 2019-07-02 오후 10 00 38](https://user-images.githubusercontent.com/32008149/60514655-e5186a00-9d14-11e9-9f5a-eab1df34fae1.png)
+    
+    Try use maven project. You could easily copy and paste dependency in there.
+
+- XSSF / HSSF / SS
+  
+  Name | Feature 
+  ----- | ------      
+  HSSF | Excel 97 ~ 2003
+  XSSF | Excel 2007 ~
+  SS   | XSSF Straming version (Low memory and fits to mass data)  
+   
 - Max Data
 
- Excel 2003 | Excel 2007 
- ----- | -----
- 265 Column | 16,384 Column
- 65,536 Line | 1,048,576 Line
+    Excel 2003 | Excel 2007 
+    ----- | -----
+    265 Column | 16,384 Column
+    65,536 Line | 1,048,576 Line
 
 - Download here : https://poi.apache.org \
 Window OS : Download Zip\
@@ -37,11 +55,10 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
 You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
 ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
 
-- 
+
 
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.
-
 
 ## CSV
 I had serious problem with importing csv file to Database.
