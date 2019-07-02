@@ -46,7 +46,7 @@ Window OS : Download Zip\
 Linux or Unix OS : Download tar
 
     ![스크린샷 2019-07-02 오후 11 16 52](https://user-images.githubusercontent.com/32008149/60519967-886e7c80-9d1f-11e9-8bf6-d4a4221b5afe.png)
-- We have to Add Red Rectangular files in BuildPath(Libraries)\
+- We have to Add Blue Rectangular files in BuildPath(Libraries)\
 if you are going to use xlsx file you should add ooxml-lib directory files.
     ![스크린샷 2019-07-02 오후 11 13 54](https://user-images.githubusercontent.com/32008149/60519806-3cbbd300-9d1f-11e9-960a-b9e905540000.png)
 
