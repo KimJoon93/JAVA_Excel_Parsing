@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70083b5-08fd-4c1c-857e-87f0269d31c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/.project" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MExcelParsing/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MExcelParsing/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="260">
-                <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -30,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExcelParsing/src/ExcelParse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="-222">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -119,12 +126,12 @@
       <updated>1561778083343</updated>
       <workItem from="1561778084489" duration="37000" />
       <workItem from="1561818788641" duration="8435000" />
-      <workItem from="1562071203321" duration="1484000" />
+      <workItem from="1562071203321" duration="2241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9956000" />
+    <option name="totallyTimeSpent" value="10713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="0" />
@@ -155,16 +162,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ExcelParsing/src/ExcelParse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="-222">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="260">
-            <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>

@@ -58,7 +58,13 @@ You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
 - Make new Maven Project\
 ![스크린샷 2019-07-02 오후 10 09 22](https://user-images.githubusercontent.com/32008149/60515203-180f2d80-9d16-11e9-881e-960d3d0c3fe4.png)
 
-- 
+- Put dependency in to pom.xml and install maven.(Becareful for the version, try to use one that is mostly used.) 
+![스크린샷 2019-07-02 오후 10 46 19](https://user-images.githubusercontent.com/32008149/60517857-5b1fcf80-9d1b-11e9-93f2-946ca674d862.png)
+
+- Check it works!\
+![스크린샷 2019-07-02 오후 10 50 31](https://user-images.githubusercontent.com/32008149/60518118-d6818100-9d1b-11e9-88bc-716f5217d214.png)
+
+- Put code in jsp file.\
 
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.
