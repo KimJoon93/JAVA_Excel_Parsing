@@ -45,27 +45,26 @@ Most of people use higher version Excel, and I have 2007 version so I used POI L
 Window OS : Download Zip\
 Linux or Unix OS : Download tar
 
-![POI](https://user-images.githubusercontent.com/32008149/60108008-dffe6c80-97a2-11e9-963f-7d87a7cf7d5a.PNG)
-
+    ![스크린샷 2019-07-02 오후 11 16 52](https://user-images.githubusercontent.com/32008149/60519967-886e7c80-9d1f-11e9-8bf6-d4a4221b5afe.png)
 - We have to Add Red Rectangular files in BuildPath(Libraries)\
 if you are going to use xlsx file you should add ooxml-lib directory files.
-![POI2](https://user-images.githubusercontent.com/32008149/60109091-afb7cd80-97a4-11e9-99f9-56b4ec8a9a40.PNG)
+    ![스크린샷 2019-07-02 오후 11 13 54](https://user-images.githubusercontent.com/32008149/60519806-3cbbd300-9d1f-11e9-960a-b9e905540000.png)
 
 - In Maven, you could put dependency to POM.xml (Beacareful for the Version)\
 You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
-![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
+    ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
 
 - Make new Maven Project\
-![스크린샷 2019-07-02 오후 10 09 22](https://user-images.githubusercontent.com/32008149/60515203-180f2d80-9d16-11e9-881e-960d3d0c3fe4.png)
+    ![스크린샷 2019-07-02 오후 10 09 22](https://user-images.githubusercontent.com/32008149/60515203-180f2d80-9d16-11e9-881e-960d3d0c3fe4.png)
 
 - Put dependency in to pom.xml and install maven.(Becareful for the version, try to use one that is mostly used.) 
-![스크린샷 2019-07-02 오후 10 46 19](https://user-images.githubusercontent.com/32008149/60517857-5b1fcf80-9d1b-11e9-93f2-946ca674d862.png)
+    ![스크린샷 2019-07-02 오후 10 46 19](https://user-images.githubusercontent.com/32008149/60517857-5b1fcf80-9d1b-11e9-93f2-946ca674d862.png)
 
 - Check it works!\
-![스크린샷 2019-07-02 오후 10 50 31](https://user-images.githubusercontent.com/32008149/60518118-d6818100-9d1b-11e9-88bc-716f5217d214.png)
+    ![스크린샷 2019-07-02 오후 10 50 31](https://user-images.githubusercontent.com/32008149/60518118-d6818100-9d1b-11e9-88bc-716f5217d214.png)
 
 - Put code in jsp file.\
-
+    
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.
 
@@ -141,5 +140,5 @@ I realized I should convert to data format.
                             break;
 
     ```         
-DB Import was successful, but we have to think about some issue.
+DB Import was successful, but we have to think about some issues.
 
