@@ -55,7 +55,10 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
 You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
 ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
 
+- Make new Maven Project\
+![스크린샷 2019-07-02 오후 10 09 22](https://user-images.githubusercontent.com/32008149/60515203-180f2d80-9d16-11e9-881e-960d3d0c3fe4.png)
 
+- 
 
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.

@@ -4,8 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.BufferedWriter;
 
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -18,8 +16,8 @@ public class ExcelParse {
 		
 		try {
 			
-		    
 		    XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream("/Users/joon/Desktop/JAVA_Excel_Parsing/sample.xlsx")); 
+		    
 		    int rowindex=0;
 
 		    int columnindex=0;
@@ -65,7 +63,6 @@ public class ExcelParse {
 		                }else{
 
 		              
-
 		                	switch (cell.getCellType()){              	
 
 		                	/*수식을 가져올 경우 값만 가져오기 위해 NumericCellValue를 가져오도록 하자*/

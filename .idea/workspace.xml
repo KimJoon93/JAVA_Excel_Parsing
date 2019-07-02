@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70083b5-08fd-4c1c-857e-87f0269d31c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ExcelParsing/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/ExcelParsing/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcelParsing/src/ExcelParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExcelParsing/src/ExcelParse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+              <first_editor relative-caret-position="260">
+                <caret line="58" selection-start-line="58" selection-end-line="58" />
               </first_editor>
               <second_editor />
             </state>
@@ -121,12 +119,12 @@
       <updated>1561778083343</updated>
       <workItem from="1561778084489" duration="37000" />
       <workItem from="1561818788641" duration="8435000" />
-      <workItem from="1562071203321" duration="1314000" />
+      <workItem from="1562071203321" duration="1484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9786000" />
+    <option name="totallyTimeSpent" value="9956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="0" />
@@ -165,8 +163,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <first_editor relative-caret-position="260">
+            <caret line="58" selection-start-line="58" selection-end-line="58" />
           </first_editor>
           <second_editor />
         </state>
