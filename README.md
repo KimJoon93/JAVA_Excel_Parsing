@@ -50,10 +50,11 @@ Linux or Unix OS : Download tar
 if you are going to use xlsx file you should add ooxml-lib directory files.
     ![스크린샷 2019-07-02 오후 11 13 54](https://user-images.githubusercontent.com/32008149/60519806-3cbbd300-9d1f-11e9-960a-b9e905540000.png)
 
-- In Maven, you could put dependency to POM.xml (Beacareful for the Version)\
-You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
+- In Maven, you can add dependency to POM.xml (Beacareful for the Version)\
+[You can find Here](https://mvnrepository.com/artifact/org.apache.poi/poi/3.17)
     ![POI3](https://user-images.githubusercontent.com/32008149/60109311-1937dc00-97a5-11e9-8ef5-db98598edaad.PNG)
-    if you want to handle xslsx file, you have to put ooxml dependency to pom.xml
+    if you want to handle xslsx file, you have to put ooxml dependency to pom.xml\
+    [You can find Here](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/3.17)
     ![스크린샷 2019-07-02 오후 11 34 02](https://user-images.githubusercontent.com/32008149/60521268-ed2ad680-9d21-11e9-96e0-d499a487d272.png)
     
 - Make new Maven Project\
@@ -62,10 +63,11 @@ You can find Here: https://mvnrepository.com/artifact/org.apache.poi/poi/3.17
 - Put dependency in to pom.xml and install maven.(Becareful for the version, try to use one that is mostly used.) 
     ![스크린샷 2019-07-02 오후 10 46 19](https://user-images.githubusercontent.com/32008149/60517857-5b1fcf80-9d1b-11e9-93f2-946ca674d862.png)
 
-- Check it works!\
+- Check Server is alright!\
     ![스크린샷 2019-07-02 오후 10 50 31](https://user-images.githubusercontent.com/32008149/60518118-d6818100-9d1b-11e9-88bc-716f5217d214.png)
 
 - Put code in jsp file.\
+    
     
 Now What I have to do is importing csv file to my DataBase.\
 But there were serious Problem in imporing to DataBase.

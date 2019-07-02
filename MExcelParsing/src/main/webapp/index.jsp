@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import = "java.io.File, java.io.FileWriter, java.io.FileInputStream, java.io.IOException, java.io.BufferedWriter"%>
+<%@ page import = "java.io.File, java.io.FileWriter, java.io.FileInputStream, java.io.IOException, java.io.BufferedWriter, java.text.SimpleDateFormat"%>
 <%@ page import = "org.apache.poi.xssf.usermodel.XSSFWorkbook, org.apache.poi.xssf.usermodel.XSSFCell, org.apache.poi.xssf.usermodel.XSSFRow, org.apache.poi.xssf.usermodel.XSSFSheet;"%>
 
 <!DOCTYPE html>
 <html>
 <body>
 <h2>Hello Maven Excel Parser!</h2>
-
 
 <%
 try {
@@ -58,35 +57,26 @@ try {
 
                 }else{
 
-              
                 	switch (cell.getCellType()){              	
-
                 	/*수식을 가져올 경우 값만 가져오기 위해 NumericCellValue를 가져오도록 하자*/
-
-                    case FORMULA:                        
-
+                    case XSSFCell.CELL_TYPE_FORMULA:                        
                     	value=cell.getNumericCellValue()+"";
-
                         break;
-
-                    case NUMERIC:
-
+                    case XSSFCell.CELL_TYPE_NUMERIC:
+                    	if(columnindex==14 || columnindex==27){
+                    		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+                    		value = format.format(cell.getDateCellValue());
+                    		break;
+                    	}
                         value=cell.getNumericCellValue()+"";
-
                         break;
-
-                    case STRING:
-
+                    case XSSFCell.CELL_TYPE_STRING:
                         value=cell.getStringCellValue()+"";
-
                         break;
-
-                    case ERROR:
-
+                    case XSSFCell.CELL_TYPE_ERROR:
                         value=cell.getErrorCellValue()+"";
-
                         break;
-
+                        
                     }
 
                 	
