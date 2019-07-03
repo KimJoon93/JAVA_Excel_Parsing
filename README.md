@@ -73,8 +73,8 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
     ![스크린샷 2019-07-03 오전 10 30 05](https://user-images.githubusercontent.com/32008149/60556762-aa96e780-9d7d-11e9-9578-7c722fc5a40a.png)
 
     
-Now What I have to do was import csv file to my DataBase.\
-But there were serious Problem in imporing.
+Then I had to import csv file to my DataBase.\
+But there were serious Problems in importing.
 
 ## CSV
 I had serious problem with importing csv file to Database.
@@ -89,7 +89,7 @@ But that doesn't work at all. I tried to think what makes problem.
 Then I thought what is CSV?
 
 ### What is CSV?
-CSV (Comma separarted version) is file that has been separated 
+CSV (Comma separated version) is file that has been separated 
 by comma. It is not same as xls,xlsx. First, I thought it's same 
 as xls or xlsx. But that is wrong. It is not Excel file. Every files have meta 
 data in it. In program I made xlsx file. So it's xlsx file, even 
@@ -102,7 +102,7 @@ I used DBeaver tool to handle MariaDB. And There were some
 problems to think about. 
 - First, I need to change "o", "x", " " text to "Y", or "N".  
 So I found index that has to be converted.(Code can be weired about "A,B,C .." values can be "Y", But Data that I 
-received doesn't need to think about that issues.)
+received does not need to think about that issues.)
   ~~~
   if(columnindex==11 || columnindex==15){                   		 
          if(value=="x" || value.isEmpty()){
@@ -143,5 +143,5 @@ I saw weired number.Then I realized I should convert to date format.
                             break;
 
     ```
-DB Import was successful, but we have to think about some issues.
+DB Import was successful, but I need to think about some issues.
 
