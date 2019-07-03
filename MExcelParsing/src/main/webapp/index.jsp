@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import = "java.io.File, java.io.FileWriter, java.io.FileInputStream, java.io.IOException, java.io.BufferedWriter, java.text.SimpleDateFormat"%>
-<%@ page import = "org.apache.poi.xssf.usermodel.XSSFWorkbook, org.apache.poi.xssf.usermodel.XSSFCell, org.apache.poi.xssf.usermodel.XSSFRow, org.apache.poi.xssf.usermodel.XSSFSheet;"%>
+<%@ page import = "org.apache.poi.xssf.usermodel.XSSFWorkbook, org.apache.poi.xssf.usermodel.XSSFCell, org.apache.poi.xssf.usermodel.XSSFRow, org.apache.poi.xssf.usermodel.XSSFSheet"%>
 
 <!DOCTYPE html>
 <html>
@@ -24,6 +24,7 @@ try {
     XSSFSheet sheet = workbook.getSheetAt(sheetindex);
     
     File csvfile = new File("/Users/joon/Desktop/JAVA_Excel_Parsing/parseSample.csv");
+    
     BufferedWriter fw = new BufferedWriter(new FileWriter(csvfile,true));
 
     int rows=sheet.getPhysicalNumberOfRows();
@@ -79,8 +80,6 @@ try {
                         
                     }
 
-                	
-
                 	if(columnindex==cells){
 
                      	buff.append("\""+value+"\"");
@@ -97,8 +96,7 @@ try {
 
         }
 
-        
-
+     
         System.out.println(buff);       
 
         fw.write(buff.toString());

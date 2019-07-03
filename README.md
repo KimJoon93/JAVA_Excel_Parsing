@@ -67,24 +67,23 @@ if you are going to use xlsx file you should add ooxml-lib directory files.
     ![스크린샷 2019-07-02 오후 10 50 31](https://user-images.githubusercontent.com/32008149/60518118-d6818100-9d1b-11e9-88bc-716f5217d214.png)
 
 - Put code in jsp file.\
+    ![스크린샷 2019-07-03 오전 10 27 44](https://user-images.githubusercontent.com/32008149/60556660-57249980-9d7d-11e9-9f95-0fc77ab8e28d.png)
+
+- Result!\
+    ![스크린샷 2019-07-03 오전 10 30 05](https://user-images.githubusercontent.com/32008149/60556762-aa96e780-9d7d-11e9-9578-7c722fc5a40a.png)
+
     
-    
-Now What I have to do is importing csv file to my DataBase.\
-But there were serious Problem in imporing to DataBase.
+Now What I have to do was import csv file to my DataBase.\
+But there were serious Problem in imporing.
 
 ## CSV
 I had serious problem with importing csv file to Database.
 There were many ways to import Data to DataBase, but I need
  to import csv File because I need a function that has to be 
- imported by button in Web. So I parse xlsx file and made new 
- xlsw file in it's own form.  
-File looks just like this.  
-[Image]  
-I was using Dbeaver tools, and I found importing function. 
-I need to use Query but, I am not used to Database so, 
-I use the function. Then I found that I had to change xlsx files 
-to csv file. So I just changed extension. But then, problem occured.
-They shows how it works but, it seems something wrong.
+ imported by button in Web. So First, I thought csv is same with Excel file.
+So I parse xlsx file and made new xlsx file in it's own form. Then I just change extension of file, 
+xlsx to csv. But then, problem occur.
+Database shows how it will works if I import csv files. But, it seems something wrong.
 So I tried to change Column delimiter, Quote char, and Quote char. 
 But that doesn't work at all. I tried to think what makes problem. 
 Then I thought what is CSV?
@@ -92,16 +91,16 @@ Then I thought what is CSV?
 ### What is CSV?
 CSV (Comma separarted version) is file that has been separated 
 by comma. It is not same as xls,xlsx. First, I thought it's same 
-as xls or xlsx. But it wasn't. It is not Excel file. There are meta 
-data in files. In program I made xlsx file. So it's xlsx file, even 
-if I changed extension. And what is CSV? It is text file! I was wrong! 
+as xls or xlsx. But that is wrong. It is not Excel file. Every files have meta 
+data in it. In program I made xlsx file. So it's xlsx file, even 
+if I changed extension to csv. And what is CSV? It is text file. 
 So I changed some code in program. And I made csv file in program. 
-Then it works! 
+Then importing works! 
 
 ### Import CSV to Database(MariaDB)
 I used DBeaver tool to handle MariaDB. And There were some 
-problem to think about. 
-- First, I should change "o", "x", " " text to "Y", or "N".  
+problems to think about. 
+- First, I need to change "o", "x", " " text to "Y", or "N".  
 So I found index that has to be converted.(Code can be weired about "A,B,C .." values can be "Y", But Data that I 
 received doesn't need to think about that issues.)
   ~~~
@@ -131,8 +130,8 @@ What I want was result but, it brings me formula. So I changed value to get Nume
          show both String Value and NumericValue by "if else" syntax. Because what is formula? It has to make
          NumericValue. I can make them to show "-1" if there are problem in Formula, but 
          
-- Lastly, date has to be converted. First I didn't check the date but when I tried to import to Database, I saw weired number.Then
-I realized I should convert to data format. 
+- Lastly, date has to be converted. First I didn't check the date, but when I tried to import to Database, 
+I saw weired number.Then I realized I should convert to date format. 
     ```
     case XSSFCell.CELL_TYPE_NUMERIC:
                         	if(columnindex==14 || columnindex==27){
@@ -143,6 +142,6 @@ I realized I should convert to data format.
                             value=cell.getNumericCellValue()+"";
                             break;
 
-    ```         
+    ```
 DB Import was successful, but we have to think about some issues.
 
